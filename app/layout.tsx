@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
+import Navbar from "./Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+// next/font requires static string literals at the call site — the transform
+// cannot evaluate runtime values. The CSS variable name and fallback stack are
+// still centralised in constant.tsx → FONTS for use everywhere else.
+const geist = Geist({
+  variable: "--font-geist",   // must match FONTS.variable in constant.tsx
+  subsets: ["latin"],         // must match FONTS.subsets in constant.tsx
 });
 
 export const metadata: Metadata = {
@@ -21,9 +20,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geist.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+          <Navbar />
+          {children}
+        </body>
     </html>
   );
 }
