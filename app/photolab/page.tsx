@@ -196,7 +196,7 @@ export default function PhotoLabPage() {
       <GlobalStyle />
       <PageWrapper>
         <Header>
-          <PageTitle>PHOTOLAB.EXE — {SITE.name}</PageTitle>
+          <PageTitle>PHOTOLAB.EXE</PageTitle>
           <Count>{PHOTOS.length} photos</Count>
         </Header>
 

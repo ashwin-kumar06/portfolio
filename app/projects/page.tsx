@@ -159,7 +159,7 @@ export default function ProjectsPage() {
     <>
       <GlobalStyle />
       <PageWrapper>
-        <PageTitle>PROJECTS.EXE — {SITE.name}</PageTitle>
+        <PageTitle>PROJECTS.EXE</PageTitle>
 
         <Stack>
           {PROJECTS.map((p) => {
