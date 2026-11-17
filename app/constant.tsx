@@ -34,6 +34,7 @@ export const NAV_LINKS = Object.freeze([
   { label: "Resume", href: "/resume" },
   { label: "Books", href: "/books" },
   { label: "Photo Lab", href: "/photolab" },
+  { label: "Substack", href: "/substack" },
 ] as const);
 
 // ─── About ────────────────────────────────────────────────────────────────────
@@ -174,6 +175,75 @@ export const PHOTOS: readonly string[] = [
   "101.jpg","102.webp","103.webp","104.webp","105.webp","106.webp","107.webp","108.jpg","109.jpg","110.webp",
   "111.jpg","112.jpg",
 ];
+
+// ─── Substack Articles ────────────────────────────────────────────────────────
+
+export const SUBSTACK_ARTICLES = Object.freeze([
+  {
+    id: 1,
+    title: "The Beauty of the Past",
+    description: "Lessons from Eternal Sunshine and 96",
+    image: "/substack/1.jpg",
+    url: "https://chaoticsage.substack.com/p/the-beauty-of-the-past-lessons-from?r=712gfh",
+    date: "Aug 2026",
+  },
+  {
+    id: 2,
+    title: "The Philosophy of Super Deluxe",
+    description: "Language, Identity, and the Alien",
+    image: "/substack/2.jpg",
+    url: "https://chaoticsage.substack.com/p/the-philosophy-of-super-deluxe-language?r=712gfh",
+    date: "Aug 2026",
+  },
+  {
+    id: 3,
+    title: "The Ghost of the Cholas",
+    description: "Why Masterpieces Often Fail the Box Office",
+    image: "/substack/3.jpg",
+    url: "https://chaoticsage.substack.com/p/the-ghost-of-the-cholas?r=712gfh",
+    date: "Aug 2026",
+  },
+  {
+    id: 4,
+    title: "Talk Through Music",
+    description: "When Lyrics Started Speaking",
+    image: "/substack/4.jpg",
+    url: "https://chaoticsage.substack.com/p/talk-through-music?r=712gfh",
+    date: "Aug 2026",
+  },
+  {
+    id: 5,
+    title: "Anime is just childish cartoon",
+    description: "Anime Is Not for Everyone",
+    image: "/substack/5.jpg",
+    url: "https://chaoticsage.substack.com/p/anime-is-just-childish-cartoon?r=712gfh",
+    date: "Sep 2026",
+  },
+  {
+    id: 6,
+    title: "Rearranging the Deck Chairs on the Political Stage",
+    description: "Why we keep buying front-row tickets to the same recycled political play and expecting a different ending",
+    image: "/substack/6.jpg",
+    url: "https://chaoticsage.substack.com/p/rearranging-the-deck-chairs-on-the?r=712gfh",
+    date: "Sep 2026",
+  },
+  {
+    id: 7,
+    title: "The Word We Avoid",
+    description: "Silent yet louder",
+    image: "/substack/7.jpg",
+    url: "https://chaoticsage.substack.com/p/the-word-we-avoid?r=712gfh",
+    date: "Oct 2026",
+  },
+  {
+    id: 8,
+    title: "Wanna find your purpose?",
+    description: "Why our obsession with finding a higher reason for existing might be an unwanted question all along",
+    image: "/substack/8.jpg",
+    url: "https://chaoticsage.substack.com/p/wanna-find-your-purpose?r=712gfh",
+    date: "Oct 2026",
+  },
+] as const);
 
 // ─── Colors ───────────────────────────────────────────────────────────────────
 
